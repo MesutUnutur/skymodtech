@@ -1247,7 +1247,7 @@ const lt = pe('<svg viewBox="0 0 800 800" width="16"><rect width="800" height="8
     } = {
         ignoreChatApiUrl: !1
     }) => {
-        const t = pt("NEXT_PUBLIC_CHAT_API_URL"),
+        const t = pt("http://ec2-54-93-185-255.eu-central-1.compute.amazonaws.com:8081"),
             n = pt("NEXT_PUBLIC_USE_EXPERIMENTAL_CHAT_API_ON")?.split(",");
         return e || !t || n && !n.some((e => e === window.location.href)) ? pt("NEXT_PUBLIC_VIEWER_URL")?.split(",")[0] ?? "https://typebot.io" : t
     },
